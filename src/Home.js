@@ -8,7 +8,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://i.pinimg.com/originals/36/a9/9f/36a99f74625db4d993210adcb7234120.jpg"
+          src="https://cdn.shopify.com/s/files/1/0865/7700/files/Untitled-12_dd618114-723b-4a85-bf4c-0e94cf079f56_2048x2048.png?v=1518372377"
           alt=""
         />
 
@@ -56,7 +56,7 @@ function Home() {
         <div className="home__row">
           <Product
             id="123456"
-            title='Bamboo "Colors" Set '
+            title='Bamboo Pestemal "Colors" Set '
             price={399.99}
             image="https://lh3.googleusercontent.com/proxy/1bfEEQTGOweVV8qVmcLcLROfsNQzzbNuUoXJUoWYRoyIdC_95FZBlsw97hRPv8lNTFO4F7KwmPyItvWCAz1YHsKxPGB3a81j_9zDKL0HqB_JffTptQltnw"
             rating={5}
