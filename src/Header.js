@@ -28,7 +28,7 @@ function Header() {
 
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
-          <span classNam="header__optionLineTwo">Prime</span>
+          <span classNam="header__optionLineTwo">Account</span>
         </div>
 
         <div className="header__optionBasket">
