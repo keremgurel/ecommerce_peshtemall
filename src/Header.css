@@ -2,17 +2,17 @@
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #022b3d;
+  background-color: #022838;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .header__logo {
-  width: 100px;
+  width: 140px;
   object-fit: contain;
-  margin: 0 20px;
-  margin-top: 18px;
+  margin: 0 10px;
+  margin-top: 5px;
 }
 
 .header__search {
@@ -30,8 +30,8 @@
 
 .header__searchIcon {
   padding: 5px;
-  height: 22px !important;
-  background-color: #e0c8a7;
+  height: 24px !important;
+  background-color: #c5b9a8;
 }
 
 .header__option {
