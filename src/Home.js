@@ -32,9 +32,9 @@ function Home() {
         <div className="home__row">
           <Product
             id="2345678"
-            title='"Cam Yesili"'
+            title='"Gunes"'
             price={99.99}
-            image="https://saunahut.de/media/image/d2/1d/ab/_MG_9600DgKesNe5k9sSU.png"
+            image="https://cdn.shopify.com/s/files/1/0666/9977/products/Turkish_Towel__Turkish-T__Basic_Bath_Hand_Towel_Yellow_grande_96db5330-ec98-4512-858c-452ce16dfbda_529x.png?v=1583855900"
             rating={3}
           />
           <Product
@@ -46,9 +46,9 @@ function Home() {
           />
           <Product
             id="123456"
-            title="100% Cotton Navy Pestemal with white lining set"
+            title="XL Cotton Beach Set"
             price={99.99}
-            image="https://cdn.turkishtowelsaustralia.com/wp-content/uploads/2020/07/Turkish-Hand-Towels-with-Fringe-Sultan-Peshtemal-Peshkir-Navy-Blue-1-510x341.jpg"
+            image="https://cdn11.bigcommerce.com/s-59b7e/images/stencil/1280x1280/products/2583/14482/Beach_Pool_Towel_5__38435.1560252640.png"
             rating={3}
           />
         </div>
@@ -56,10 +56,10 @@ function Home() {
         <div className="home__row">
           <Product
             id="123456"
-            title="Organic Bamboo Pestemal"
-            price={99.99}
-            image="https://images-na.ssl-images-amazon.com/images/I/71rkW5TiRTL._AC_SX522_.jpg"
-            rating={3}
+            title='Bamboo "Colors" Set '
+            price={399.99}
+            image="https://lh3.googleusercontent.com/proxy/1bfEEQTGOweVV8qVmcLcLROfsNQzzbNuUoXJUoWYRoyIdC_95FZBlsw97hRPv8lNTFO4F7KwmPyItvWCAz1YHsKxPGB3a81j_9zDKL0HqB_JffTptQltnw"
+            rating={5}
           />
         </div>
       </div>
