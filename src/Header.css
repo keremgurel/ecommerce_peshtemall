@@ -30,8 +30,9 @@
 
 .header__searchIcon {
   padding: 5px;
-  height: 24px !important;
-  background-color: #e7c27a;
+  height: 26px !important;
+  background-color: grey;
+  color: white;
 }
 
 .header__option {
@@ -44,6 +45,7 @@
 
 .header__optionLineOne {
   font-size: 10px;
+  color: grey;
 }
 
 .header_optionLineTwo {

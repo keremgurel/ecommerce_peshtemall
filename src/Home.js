@@ -1,16 +1,14 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import anam from "../src/Images/anam.jpg";
+import anam2 from "../src/Images/anam2.jpg";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://cdn.shopify.com/s/files/1/0865/7700/files/Untitled-12_dd618114-723b-4a85-bf4c-0e94cf079f56_2048x2048.png?v=1518372377"
-          alt=""
-        />
+        <img className="home__image" src={anam} alt="" />
 
         <div className="home__row">
           <Product
@@ -24,7 +22,7 @@ function Home() {
             id="2345678"
             title='"Kargasa" 100% Cotton Navy Pestemal'
             price={89.99}
-            image="https://i.hizliresim.com/6JRd67.png"
+            image={anam2}
             rating={5}
           />
         </div>
@@ -58,7 +56,7 @@ function Home() {
             id="123456"
             title='Bamboo Pestemal "Colors" Set '
             price={399.99}
-            image="https://lh3.googleusercontent.com/proxy/1bfEEQTGOweVV8qVmcLcLROfsNQzzbNuUoXJUoWYRoyIdC_95FZBlsw97hRPv8lNTFO4F7KwmPyItvWCAz1YHsKxPGB3a81j_9zDKL0HqB_JffTptQltnw"
+            image="https://lh3.googleusercontent.com/proxy/8KFoOuI3S1M84VEnRGI8jieXp2an4323n_tf_myEfLcWQkbFkGR3oVVzdKm3OPOVWgBnWKX7Sbw_UL2iXq5XrV9qSVD-XhcFzfSp7qLrTlaIwuVN-gYq6g"
             rating={5}
           />
         </div>
