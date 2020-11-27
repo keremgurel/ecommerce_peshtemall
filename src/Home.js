@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Product from "./Product";
 import anam from "../src/Images/anam.jpg";
-import anam2 from "../src/Images/anam2.jpg";
+import anam2 from "../src/Images/anam2.png";
 
 function Home() {
   return (
@@ -22,7 +22,7 @@ function Home() {
             id="2345678"
             title='"Kargasa" 100% Cotton Navy Pestemal'
             price={89.99}
-            image={anam2}
+            image="https://www.katoendraad.nl/wp-content/uploads/2018/09/1536597684.png"
             rating={5}
           />
         </div>
@@ -56,7 +56,7 @@ function Home() {
             id="123456"
             title='Bamboo Pestemal "Colors" Set '
             price={399.99}
-            image="https://lh3.googleusercontent.com/proxy/8KFoOuI3S1M84VEnRGI8jieXp2an4323n_tf_myEfLcWQkbFkGR3oVVzdKm3OPOVWgBnWKX7Sbw_UL2iXq5XrV9qSVD-XhcFzfSp7qLrTlaIwuVN-gYq6g"
+            image={anam2}
             rating={5}
           />
         </div>
