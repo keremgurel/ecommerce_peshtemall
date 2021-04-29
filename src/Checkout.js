@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import Subtotal from "./Subtotal";
+import salephoto from "../src/Images/sale.jpg";
 import "./Checkout.css";
 
 function Checkout() {
@@ -8,7 +10,7 @@ function Checkout() {
       <div className="checkout__left">
         <img
           className="checkout__ad"
-          src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
+          src={salephoto}
           alt=""
         />
 
@@ -19,7 +21,7 @@ function Checkout() {
       </div>
 
       <div className="checkout__right">
-        <h2>Subtotal goes here</h2>
+        <Subtotal />
       </div>
     </div>
   );
