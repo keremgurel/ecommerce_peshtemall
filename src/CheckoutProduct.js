@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import './CheckoutProduct.css'
 import { useStateValue } from "./StateProvider";
 
-function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
+function CheckoutProduct({ id, image, title, price, rating }) {
     const [{ basket }, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
@@ -30,9 +31,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                         <p>⭐️</p>
                     ))}
                 </div>
-                {!hideButton && (
                     <button onClick={removeFromBasket}>Remove from Basket</button>
-                )}
             </div>
         </div>
     )
