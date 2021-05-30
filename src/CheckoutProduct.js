@@ -24,6 +24,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
+    {/* for the rating, create an array of five, and fill the empty indexes with the amount of stars the index has */}
                 <div className="checkoutProduct__rating">
                     {Array(rating)
                     .fill()

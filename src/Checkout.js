@@ -20,6 +20,14 @@ function Checkout() {
 
         <div>
           <h2 className="checkout__title">Your shopping basket</h2>
+
+          {/* <CheckoutProduct
+            id='12345'
+            title='Kooobee test'
+            image="https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_620/MTgwOTY2MjUyMjg4NjgxMzIw/kobe_bryant_si_0001.webp"
+            price={100}
+            rating={5}
+          /> */}
           
           {basket.map(item => (
             <CheckoutProduct
