@@ -1,5 +1,6 @@
 export const initialState = {
     basket: [],
+    user: null
 };
 
 // selector: reduce maps through the basket and adds up the total. Initial amount is zero
