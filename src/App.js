@@ -14,6 +14,7 @@ import { useStateValue } from "StateProvider";
 function App() {
   const [{}, dispatch] =useStateValue();
 
+  // using useEffect to handle authentication
   useEffect(() => {
     // will only run with the first render call
     auth.onAuthStateChanged(authUser => {
@@ -21,7 +22,7 @@ function App() {
 
       if(authUser) {
         // if the user is logged in
-        // dispacth object is going to be sending the user info to the data layer
+        // dispatch object is going to be sending the user info to the data layer
         dispatch({
           type: 'SET_USER',
           user: authUser
