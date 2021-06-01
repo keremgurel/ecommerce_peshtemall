@@ -41,7 +41,6 @@ function App() {
     // BEM Convention
     <Router>
       <div className="app">
-
         <Switch>
           <Route path="/login">
             <Login />
