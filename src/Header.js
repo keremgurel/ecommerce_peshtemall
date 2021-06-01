@@ -31,9 +31,9 @@ function Header() {
 
       <div className="header__nav">
         {/* If there is no user logged in and we press the Sign In ref, then forward to login page */}
-        <Link to={!user && '/login'}>
+        <Link to='/login'>
           <div onClick={handleAuthentication} className="header__option">
-            <span className="header__optionLineOne">Hello!</span>
+            <span className="header__optionLineOne">{!user ? 'Guest' : user.email}</span>
             <span className="header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
           </div>
         </Link>
