@@ -3,13 +3,13 @@ import "./Home.css";
 import Product from "../Components/Product";
 import anam from "../Images/anam.jpg";
 import anam2 from "../Images/anam2.png";
-// import gokkusagi from "../src/Images/gokkusagi.jpg";
-// import gunes from "../src/Images/gunes.jpg";
-// import hamsi from "../src/Images/hamsi.jpg"
-// import kargasa from "../src/Images/kargasa.jpg"
-// import long from "../src/Images/long.jpg"
-// import kalin from "../src/Images/kalin.jpg"
-// import yesil from "../src/Images/yesil.jpg"
+// import gokkusagi from "../Images/gokkusagi.jpg";
+// import gunes from "../Images/gunes.jpg";
+// import hamsi from "../Images/hamsi.jpg"
+// import kargasa from "../Images/kargasa.jpg"
+// import long from "../Images/long.jpg"
+// import kalin from "../Images/kalin.jpg"
+// import yesil from "../Images/yesil.jpg"
 
 function Home() {
   return (
