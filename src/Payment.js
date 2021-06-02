@@ -8,6 +8,7 @@ import { useElements, useStripe, CardElement } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from './reducer.js'
 import axios from './axios';
+import { db } from './firebase.js'
 
 
 
@@ -41,8 +42,12 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
-    const handleSubmit = async event => {
-        // stipe stuff
+
+    console.log("The secret is: ", clientSecret);
+    console.log('person', user);
+
+    const handleSubmit = async (event) => {
+        // do all the fancy stripe stuff...
         event.preventDefault();
         setProcessing(true);
 
@@ -51,17 +56,37 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
-            // Intent is the payment confirmation
+            // paymentIntent = payment confirmation
+            /* 
+            Implementing the user orders to the database
+             When the order comes back successful: reach into the collection of users, 
+             to that user, to that order, create a document with the paymentId, and set the info.
+            */
+            db
+              .collection('users')
+              .doc(user?.uid)
+              .collection('orders')
+              .doc(paymentIntent.id)
+              .set({
+                  basket: basket,
+                  amount: paymentIntent.amount,
+                  created: paymentIntent.created
+              })
 
             setSucceeded(true);
-            setError(null);
-            setProcessing(false);
+            setError(null)
+            setProcessing(false)
+
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
 
             history.replace('/orders')
         })
 
-        // client secret: tell secret to actually run the card for the transaction
-    }  
+    }
+
+        // client secret: tell secret to actually run the card for the transaction  
 
     const handleChange = event => {
         // listen for changes in the CardElement and display any errors as customer types the details
