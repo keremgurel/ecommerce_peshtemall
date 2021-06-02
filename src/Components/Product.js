@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {

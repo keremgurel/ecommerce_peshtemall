@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Subtotal from "./Subtotal";
-import salephoto from "../src/Images/sale.jpg";
+import Subtotal from "../Components/Subtotal";
+import salephoto from "../Images/sale.jpg";
 import "./Checkout.css";
-import { useStateValue } from "./StateProvider";
-import CheckoutProduct from "./CheckoutProduct";
+import { useStateValue } from "../StateProvider.js";
+import CheckoutProduct from "../Components/CheckoutProduct.js";
 
 function Checkout() {
   const [{ basket, user }] = useStateValue();

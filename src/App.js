@@ -2,14 +2,14 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
-import Checkout from "./Checkout";
-import Login from "Login";
-import Orders from "./Orders.js";
+import Header from "./Components/Header.js";
+import Home from "./Pages/Home.js";
+import Checkout from "./Pages/Checkout.js";
+import Login from "Pages/Login.js";
+import Orders from "./Components/Orders.js";
 import { auth } from "./firebase";
 import { useStateValue } from "StateProvider";
-import Payment from "./Payment.js";
+import Payment from "./Pages/Payment.js";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js"
 
@@ -45,7 +45,6 @@ function App() {
   }, [])
 
   return (
-    // BEM Convention
     <Router>
       <div className="app">
         <Switch>

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
 import './CheckoutProduct.css'
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     // dispatch for change of information

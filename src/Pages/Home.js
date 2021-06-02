@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
-import Product from "./Product";
-import anam from "../src/Images/anam.jpg";
-import anam2 from "../src/Images/anam2.png";
+import Product from "../Components/Product";
+import anam from "../Images/anam.jpg";
+import anam2 from "../Images/anam2.png";
 // import gokkusagi from "../src/Images/gokkusagi.jpg";
 // import gunes from "../src/Images/gunes.jpg";
 // import hamsi from "../src/Images/hamsi.jpg"

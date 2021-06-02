@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./Header.css";
-import logo from "../src/Images/logo.png";
+import logo from "../Images/logo.png";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
-import { useStateValue } from "./StateProvider";
-import { auth } from "./firebase";
+import { useStateValue } from "../StateProvider";
+import { auth } from "../firebase";
 
 function Header() {
   const [{ basket, user } ] = useStateValue();
