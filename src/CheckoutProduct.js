@@ -3,7 +3,7 @@ import React from 'react';
 import './CheckoutProduct.css'
 import { useStateValue } from "./StateProvider";
 
-function CheckoutProduct({ id, image, title, price, rating }) {
+function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
     // dispatch for change of information
     const [{ basket }, dispatch] = useStateValue();
 
@@ -25,7 +25,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
-    {/* for the rating, create an array of five, and fill the empty indexes with the amount of stars the index has */}
+                {/* for the rating, create an array of five, and fill the empty indexes with the amount of stars the index has */}
                 <div className="checkoutProduct__rating">
                     {Array(rating)
                     .fill()
@@ -33,7 +33,9 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                         <p key={i}>⭐️</p>
                     ))}
                 </div>
+                {!hideButton && (
                     <button onClick={removeFromBasket}>Remove from Basket</button>
+                )}
             </div>
         </div>
     )
