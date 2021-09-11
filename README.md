@@ -1,6 +1,6 @@
 # PesteMall E-Commerce Application
 
-# [Live Demo](https://www.pestemall.keremg.com/)
+# [Live Demo](https://pestemall.keremg.com/)
 
 ## About the project
 Pestemall is a fully functional e‐commerce website that sells traditional Turkish Towels.
