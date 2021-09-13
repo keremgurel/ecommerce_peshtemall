@@ -2,7 +2,7 @@ import { db } from '../firebase.js';
 import React, { useState, useEffect } from 'react'
 import { useStateValue } from 'StateProvider';
 import './Orders.css'
-import Order from './Order.js';
+import Order from '../Components/Order.js';
 
 
 function Orders() {

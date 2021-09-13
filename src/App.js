@@ -6,7 +6,7 @@ import Header from "./Components/Header.js";
 import Home from "./Pages/Home.js";
 import Checkout from "./Pages/Checkout.js";
 import Login from "Pages/Login.js";
-import Orders from "./Components/Orders.js";
+import Orders from "Pages/Orders.js";
 import { auth } from "./firebase";
 import { useStateValue } from "StateProvider";
 import Payment from "./Pages/Payment.js";
